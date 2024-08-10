@@ -7,9 +7,3 @@ stages
  { steps { git branch: 'master', url: 'https://github.com/Vikram9929/jenkins_sai_06aug2024.git'}}
 }
 }
-{
-sshagent(['deploy-to-tomcat']) {
-    'ssh -o StrictHostKeyChecking=no webapp/target/webapp.war ec2-user@54.254.4.14://usr/share/tomcat/webapps'    
-	}
-	}
-	
