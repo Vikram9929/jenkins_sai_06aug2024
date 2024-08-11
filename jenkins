@@ -4,7 +4,7 @@ agent any
 stages
 {
  stage('scm checkout')
- { steps { git branch: 'master', url: 'https://github.com/Vikram9929/jenkins_sai_06aug2024.git'}}
+ { steps { git branch: 'master', url:'https://github.com/Vikram9929/jenkins_sai_06aug2024.git'}}
 }
 }
 stage('code compile')
